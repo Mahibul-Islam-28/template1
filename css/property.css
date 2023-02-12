@@ -1,0 +1,185 @@
+
+/* Image Section */
+.image-section {
+  margin: 2rem auto;
+}
+
+.image-section img {
+  width: 100%;
+  height: fit-content;
+}
+
+.image-section .slider-image {
+  width: 100%;
+  max-height: 70vh;
+  height: fit-content;
+}
+
+.image-section .row {
+  margin: 1.5rem 0px;
+}
+
+/* Overview section */
+.overview-section {
+  background: #CFCECE;
+  padding: 1rem 0;
+}
+
+.overview-section td {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.overview-section td img {
+  width: 30px;
+  width: 30px;
+}
+
+/* Description section */
+.description-section {
+  padding: 2rem 0;
+}
+
+.description-section .row p {
+  background: #E2E2E2;
+  padding: 10px;
+  width: 70%;
+}
+
+/* Details section */
+.details-section {
+  padding: 2rem 0;
+  background: #CFCECE;
+}
+
+.details-section .row p {
+  background: #E5E5E5;
+  padding: 10px;
+  width: 70%;
+}
+
+
+.image-section img {
+  vertical-align: middle;
+  width: 100%;
+  height: 60vh;
+}
+.image-section a {
+  text-decoration: none;
+}
+
+.image-section .column img {
+  width: 100%;
+  height: 150px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.image-section .container {
+  position: relative;
+  padding-right: 0px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .image-section img {
+    height: 300px;
+  }
+  .image-section .column img{
+    height: 100px;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+
+  .image-section .column img{
+    height: 50px;
+  }
+  .image-section .row{
+    padding: 0px;
+    
+  }
+  .image-section .row>*{
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+
+}
